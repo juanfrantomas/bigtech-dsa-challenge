@@ -1,0 +1,15 @@
+{
+  "name": "bigtech-dsa-challenge",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "newday": "bun run index.ts",
+    "watch:day1": "bun --watch run 90-days-dsa/day01-arrays-basics/solutions.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
