@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "Debug Test (Watch, archivo actual)",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "runtimeArgs": [
+        "test"
+      ],
+      "watchMode": true,
+      "stopOnEntry": false
+    },
+    {
+      "type": "bun",
+      "request": "launch",
+      "name": "Debug File (Watch)",
+      "program": "${file}",
+      "cwd": "${workspaceFolder}",
+      "stopOnEntry": false,
+      "watchMode": true,
+    },
+  ]
+}

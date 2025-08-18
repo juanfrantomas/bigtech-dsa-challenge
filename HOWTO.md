@@ -114,7 +114,6 @@ if (import.meta.main) {
   console.log(twoSum([3, 2, 4], 6));       // [1, 2]
 }
 ```
-
 Run it once:
 
 ```bash
@@ -152,6 +151,27 @@ Then run:
 ```bash
 bun run watch:day1
 ```
+
+---
+
+## 🧩 7. VS Code Integration with Bun
+
+To get the most out of this setup, make sure to configure **Visual Studio Code** for Bun.
+
+1. **Install the Extension**
+   → Get **[Bun for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=oven.bun-vscode)** from the Marketplace.
+
+2. **Debugging with `launch.json`**
+
+   * Open any `*.test.ts` file and press **F5** to run it in the **Debug Console**.
+   * Set **breakpoints** in `solutions.ts` (or any other file) and step through your code while tests run.
+
+3. **Why It Matters**
+   This makes it easy to:
+
+   * Catch and fix **logic errors** early.
+   * Inspect variables and execution flow.
+   * Validate your solutions against checkpoints more reliably. 🧭🔍
 
 ---
 

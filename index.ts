@@ -85,7 +85,6 @@ function makeSolutionsTemplate(slug: string): string {
   return `// ${slug}/solutions.ts
 // Place your LeetCode solutions for the day here.
 // Tip: export each solution as a function and include a small test.
-
 //////////////////////
 // Problem 1
 //////////////////////
@@ -103,13 +102,30 @@ export function solutionTwo(/* params */) {
   // TODO: implement
   return null;
 }
-
-// Quick local smoke test (not a full test framework)
-if (import.meta.main) {
-  console.log("Smoke test for ${slug} solutions:");
-  console.log("solutionOne =>", solutionOne());
-  console.log("solutionTwo =>", solutionTwo());
+`;
 }
+
+function makeTestsTemplate(slug: string): string {
+  return `// ${slug}/solutions.test.ts
+import { describe, expect, it } from "bun:test";
+import { removeDuplicates } from "./solutions";
+describe("Remove Duplicates from Sorted Array", () => {
+  it("[0,0,1,1,1,2,2,3,3,4] should return 5", () => {
+    expect(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])).toBe(5);
+  });
+
+  it("[1,1,2] should return 2", () => {
+    const nums: number[] = [1, 1, 2];
+    const expectedNums: number[] = [1, 2,];
+
+    const k = removeDuplicates(nums);
+    for (let index = 0; index < k; index++) {
+      expect(nums[index]).toBe(expectedNums[index]!);
+    }
+  });
+})
+
+
 `;
 }
 
@@ -135,6 +151,7 @@ async function createDayScaffold(slug: string) {
     { name: "notes.md", content: makeNotesTemplate(slug) },
     { name: "examples.ts", content: makeExamplesTemplate(slug) },
     { name: "solutions.ts", content: makeSolutionsTemplate(slug) },
+    { name: "solutions.test.ts", content: makeTestsTemplate(slug) },
   ];
 
   await Promise.all(
