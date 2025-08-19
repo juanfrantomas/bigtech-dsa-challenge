@@ -1,0 +1,12 @@
+{
+  "github.copilot.enable": {
+    "*": false,
+  },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "eslint.validate": [
+    "typescript",
+    "javascript"
+  ]
+}

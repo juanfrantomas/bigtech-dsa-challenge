@@ -188,7 +188,8 @@ async function main() {
     console.log(`   - notes.md`);
     console.log(`   - examples.ts`);
     console.log(`   - solutions.ts\n`);
-
+    console.log(`   - solutions.test.ts\n`);
+    
     console.log("Tip: commit your progress:");
     console.log(`   git add ${path.relative(ROOT_DIR, dayDir)} && git commit -m "chore: add ${answer} scaffold"\n`);
   } catch (err: any) {
