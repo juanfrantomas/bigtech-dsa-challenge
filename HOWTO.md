@@ -80,6 +80,8 @@ When you enter a valid day slug:
    * `notes.md` → space for your explanations and theory.
    * `examples.ts` → small TypeScript demos of the DSA concept.
    * `solutions.ts` → your LeetCode solutions for the day.
+   * `solutions.test.ts` → your LeetCode solution tests for the day.
+  
 3. Prevents overwriting if the folder already exists.
 4. Prints a confirmation message and a **git command hint** to commit progress.
 
@@ -175,23 +177,37 @@ To get the most out of this setup, make sure to configure **Visual Studio Code**
 
 ---
 
-## ✅ Example Workflow
+## ✅ My Daily Workflow
 
-1. Scaffold the day:
-
-   ```bash
-   bun run index.ts
-   ```
-
-   → enter: `day02-two-pointers`
-
-2. Implement and test solutions with watcher:
+1. **Scaffold the day 🏗️**
 
    ```bash
-   bun --watch run 90-days-dsa/day02-two-pointers/solutions.ts
+   bun run newday
    ```
 
-3. Commit progress:
+   → enter the slug, e.g. `day02-two-pointers`
+
+2. **Study the concept of the day 📚**
+
+   * Write a short summary in `notes.md`.
+   * Try small snippets in `examples.ts`.
+     Debug them in VS Code by pressing **F5 ▶️**, using **breakpoints 🎯** and the **Debug Console 🖥️** to understand what’s happening.
+
+3. **Open the LeetCode problem 🔑**
+
+   * In `solutions.ts`, **export** the function signature that LeetCode specifies.
+   * In `solutions.test.ts` 🧪, **prepare** the matching `expect` and `it` cases for that exercise.
+
+4. **Run the test file under the debugger**
+
+   * Press **F5 ▶️** to run `solutions.test.ts`.
+   * Jump into `solutions.ts` to implement while tests guide you.
+
+5. **Start the LeetCode timer ⏱️**
+
+   * Hit the timer and begin reading/solving the exercise.
+
+6. **Commit progress 💾**
 
    ```bash
    git add 90-days-dsa/day02-two-pointers

@@ -87,6 +87,8 @@ function makeSolutionsTemplate(slug: string): string {
 // Tip: export each solution as a function and include a small test.
 //////////////////////
 // Problem 1
+// url: 
+// time: 
 //////////////////////
 
 export function solutionOne(/* params */) {
@@ -96,6 +98,8 @@ export function solutionOne(/* params */) {
 
 //////////////////////
 // Problem 2
+// url: 
+// time: 
 //////////////////////
 
 export function solutionTwo(/* params */) {
