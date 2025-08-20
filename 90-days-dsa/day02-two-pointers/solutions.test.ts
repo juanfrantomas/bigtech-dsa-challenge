@@ -1,19 +1,31 @@
 // day02-two-pointers/solutions.test.ts
 import { describe, expect, it } from "bun:test";
-import { removeDuplicates } from "./solutions";
-describe("Remove Duplicates from Sorted Array", () => {
-  it("[0,0,1,1,1,2,2,3,3,4] should return 5", () => {
-    expect(removeDuplicates([0, 0, 1, 1, 1, 2, 2, 3, 3, 4])).toBe(5);
+import { threeSum, validPalindrome } from "./solutions";
+
+describe('3Sum return nums[i] + nums[j] + nums[k] == 0', () => {
+  it("[-1,0,1,2,-1,-4] should is [[-1,-1,2],[-1,0,1]]", ()=> {
+    expect(threeSum([-1,0,1,2,-1,-4])).toEqual([[-1,-1,2],[-1,0,1]])
+  })
+  it("[0,1,1] should is []", ()=> {
+    expect(threeSum([0,1,1])).toEqual([]);
+  })
+  it("[0,0,0,0] should is [[0,0,0]]", ()=> {
+    expect(threeSum([0,0,0,0])).toEqual([[0,0,0]]);
+  })
+  it("[-1,0,1,0] should is [[-1,0,1]]", ()=> {
+    expect(threeSum([-1,0,1,0])).toEqual([[-1,0,1]]);
+  })
+  it("[1,-1,-1,0] should is [[-1,0,1]]", ()=> {
+    expect(threeSum([1,-1,-1,0])).toEqual([[-1,0,1]]);
+  })
+});
+describe("Valid Palindrome", () => {
+  it.skip("'A man, a plan, a canal: Panama' is true", () => {
+    expect(validPalindrome('A man, a plan, a canal: Panama')).toBe(true);
   });
 
-  it("[1,1,2] should return 2", () => {
-    const nums: number[] = [1, 1, 2];
-    const expectedNums: number[] = [1, 2,];
-
-    const k = removeDuplicates(nums);
-    for (let index = 0; index < k; index++) {
-      expect(nums[index]).toBe(expectedNums[index]!);
-    }
+  it.skip("'race a car' is false", () => {
+    expect(validPalindrome('race a car')).toBe(false);
   });
 })
 
