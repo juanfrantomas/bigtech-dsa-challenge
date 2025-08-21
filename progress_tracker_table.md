@@ -10,7 +10,7 @@ Each row includes the **day number, topic, problems, and a checkbox to mark comp
 | Done | Day | Date | Topic | LeetCode Problems |
 |------|-----|------|-------|-------------------|
 | [x] | 1 | | Arrays (basics) | [Two Sum](https://leetcode.com/problems/two-sum/), [Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/) |
-| [ ] | 2 |  | Two Pointers | [Move Zeroes](https://leetcode.com/problems/move-zeroes/), [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
+| [x] | 2 |  | Two Pointers | [Move Zeroes](https://leetcode.com/problems/move-zeroes/), [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
 | [ ] | 3 |  | Sliding Window | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/), [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | [ ] | 4 |  | Strings (palindrome, anagram) | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/), [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
 | [ ] | 5 |  | String Hashing (basics) | [Implement strStr()](https://leetcode.com/problems/implement-strstr/), [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) |
