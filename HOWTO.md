@@ -201,7 +201,9 @@ To get the most out of this setup, make sure to configure **Visual Studio Code**
 4. **Run the test file under the debugger**
 
    * Press **F5 ▶️** to run `solutions.test.ts`.
-   * Jump into `solutions.ts` to implement while tests guide you.
+   * Install the **Bun for Visual Studio Code** extension if you haven't yet (see the integration section above).
+   * Ensure you have a `.vscode/launch.json` configured (in this file includes the recommended Bun `launch.json`). This makes F5 run the current file in watch mode and shows output in the Debug Console.
+   * While the tests run, set **breakpoints** inside `solutions.ts` and step through the code — highly recommended for diagnosing logic errors and verifying checkpoints. 🧭🔍
 
 5. **Start the LeetCode timer ⏱️**
 
