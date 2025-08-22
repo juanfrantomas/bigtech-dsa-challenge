@@ -42,11 +42,26 @@ export function findMaxAverage(nums: number[], k: number): number {
 //////////////////////
 // Longest Substring Without Repeating Characters
 // url: https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
-// time: 
+// time: 22m
 //////////////////////
 
 export function lengthOfLongestSubstring(s: string): number {
+  let left = 0;
+  let seen = new Set<string>();
+  let maxLen = 0;
 
-  // TODO: implement
-  return 0;
+  for (let right = 0; right < s.length; right++) {
+    // shrink until contraint satisfied
+    while (seen.has(s[right]!)) {
+      seen.delete(s[left]!);
+      left++;
+    }
+
+    // expand window
+    seen.add(s[right]!);
+    maxLen = Math.max(maxLen, right - left + 1);
+  }
+
+  return maxLen;
 }
+
