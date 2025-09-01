@@ -45,6 +45,28 @@ export function strStr(haystack: string, needle: string): number {
 //////////////////////
 
 export function repeatedSubstringPattern(s: string): boolean {
-  // TODO: implement
+  let subS = '';
+  let halfStringLength = Math.floor(s.length / 2);
+  let isTheSame = false;
+
+  if (s.length === 2 && s[0] === s[1]) return true;
+
+   for (let i = 1; i <= halfStringLength; i++) {
+    subS = s.substring(0,i);
+    for(let nextI = 0; nextI < s.length; nextI=nextI+i) {
+      let nextSubS = s.substring(nextI+i,nextI+i+i);
+      if (subS === nextSubS) {
+        isTheSame = true;
+      }else{
+        isTheSame = false;
+        break;
+      }
+      if (isTheSame && nextI+i+i === s.length) {
+        return true;
+      }
+    }
+    isTheSame = false;
+  }
+
   return false;
 }

@@ -13,7 +13,7 @@ Each row includes the **day number, topic, problems, and a checkbox to mark comp
 | [x] | 2 |  | Two Pointers | [Move Zeroes](https://leetcode.com/problems/move-zeroes/), [Container With Most Water](https://leetcode.com/problems/container-with-most-water/) |
 | [x] | 3 |  | Sliding Window | [Maximum Average Subarray I](https://leetcode.com/problems/maximum-average-subarray-i/), [Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/) |
 | [x] | 4 |  | Strings (palindrome, anagram) | [Valid Palindrome](https://leetcode.com/problems/valid-palindrome/), [Valid Anagram](https://leetcode.com/problems/valid-anagram/) |
-| [ ] | 5 |  | String Hashing (basics) | [Implement strStr()](https://leetcode.com/problems/implement-strstr/), [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) |
+| [x] | 5 |  | String Hashing (basics) | [Implement strStr()](https://leetcode.com/problems/implement-strstr/), [Repeated Substring Pattern](https://leetcode.com/problems/repeated-substring-pattern/) |
 | [ ] | 6 |  | Linked List (singly) | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/), [Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/) |
 | [ ] | 7 |  | Linked List (fast/slow pointer) | [Linked List Cycle](https://leetcode.com/problems/linked-list-cycle/), [Middle of the Linked List](https://leetcode.com/problems/middle-of-the-linked-list/) |
 | [ ] | 8 |  | Stack | [Valid Parentheses](https://leetcode.com/problems/valid-parentheses/), [Min Stack](https://leetcode.com/problems/min-stack/) |
